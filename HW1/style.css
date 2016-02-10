@@ -1,0 +1,61 @@
+body {
+    background-color: #EDEDED;
+}
+.sheet {
+    background: white;
+    border: 2px solid #DCDCDC;
+    margin: 2px 33% 1px;
+    height: 750px;
+}
+.name {
+       margin: 60px 0px 20px;
+       font-size: 20pt;
+       font-weight: bold;
+       padding: 0;
+       text-align: center;
+   }
+.center {
+    text-align: center;
+}
+.spec {
+    padding-left: 12%;
+    font-size: 13pt;
+    line-height: 1.5;
+    margin: 0px 0px 12px;
+}
+.spec1 {
+    padding-left: 12%;
+    font-size: 13pt;
+    line-height: 1.5;
+    margin: 17px 0px 25px;
+}
+.spec2 {
+    padding-left: 12%;
+    font-size: 13pt;
+    line-height: 1.5;
+    margin: 17px 0px 0px;
+}
+.spec3 {
+    padding-left: 12%;
+    font-size: 13pt;
+    line-height: 1.5;
+    margin: 25px 0px 0px;
+}
+hr {
+   width: 80%;
+}
+ul {
+    padding-left: 17%;
+    line-height: 1.5;
+    font-size: 13pt;
+}
+
+a {
+   padding-left: 12%;
+   line-height: 1.5;
+   font-size: 13pt
+}
+img{
+  height: 50%;
+  width: 50%;
+}
