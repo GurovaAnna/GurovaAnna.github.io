@@ -1,0 +1,115 @@
+body {
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13.33px;
+}
+.container {
+  background-color: #ffffff;
+  margin-left:13%;
+  margin-right: 13%;
+  -webkit-box-shadow: -2px 0px 13px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 0px 13px -2px rgba(0,0,0,0.75);
+   box-shadow: -2px 0px 13px -2px rgba(0,0,0,0.75);
+}
+.header {
+  padding-left: 5.15%;
+  padding-top: 2.5%;
+}
+.menu {
+  display: inline-block;
+  margin-left: 5.15%;
+  margin-top: 2%;
+  background: linear-gradient(to top, #444343, #5e5e5e);
+  width: 91%;
+  height: 15%;
+}
+.link {
+display: inline-block;
+font-size: 14.67px;
+padding-left: 3%;
+padding-top: 1.5%;
+padding-right: 5%;
+padding-bottom: 1.5%;
+text-align: center;
+color: #ebebeb;
+text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+.link:hover {
+  background: linear-gradient(to top, #2f2f2f, #4a4a4a);
+  outline: 1px solid #838383;
+}
+.left-menu {
+  display: block;
+  float: left;
+  margin-left: 5.15%;
+  margin-top: 3%;
+  width: 21%;
+}
+.link1 {
+  display: block;
+  border-left: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  padding-left: 10%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+.link1:last-child {
+  border-bottom: 1px solid #c8c8c8;
+}
+.link1:hover {
+  padding-left: 18%;
+  background-color: #f9f9f9;
+  font-weight:bolder;
+}
+.bycicle {
+  display: block;
+  width: 65%;
+  height: 15%;
+  margin-left: 31%;
+  margin-top: 3%;
+  border: 1px solid #c8c8c8;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+}
+.bycicle img {
+  width: 70%;
+  height: 70%;
+}
+.text {
+  width: 60%;
+  margin-left: 31%;
+  margin-top: 2.5%;
+  padding-left: 2%;
+  line-height: 180%;
+}
+.menu-footer {
+  display: inline-block;
+  margin-left: 5.15%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: #e1e1e1;
+  width: 91%;
+  height: 15%;
+}
+.link3 {
+display: inline-block;
+padding-left: 3%;
+padding-top: 1.5%;
+padding-right: 3%;
+padding-bottom: 0.74%;
+text-align: center;
+color: #2c2c2c;
+}
+.link3:hover {
+  text-decoration: underline;
+}
+.link5 {
+display: inline-block;
+padding-left: 38%;
+padding-top: 1.5%;
+padding-bottom: 1.5%;
+text-align: right;
+color: #b6b6b6;
+}
