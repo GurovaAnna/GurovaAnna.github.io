@@ -1,0 +1,42 @@
+table {
+  margin: auto;
+  width: 32%;
+  margin-top: 7%;
+}
+td {
+    border: 8px solid black;
+    }
+tr {
+  height: 60px;
+}
+.yellow {
+  background-image: url("../img/yellow.png");
+  opacity: 0.9;
+}
+.red {
+  background-image: url("../img/red.png");
+  opacity: 0.9;
+}
+.black {
+  background-image: url("../img/black.png");
+  opacity: 0.9;
+}
+.blue {
+  background-image: url("../img/blue.png");
+  opacity: 0.9;
+}
+.left {
+  border-left: 0;
+}
+.top {
+  border-top: 0;
+}
+.right {
+  border-right: 0;
+}
+.bottom {
+  border-bottom: 0;
+}
+.h {
+  height: 30px;
+}

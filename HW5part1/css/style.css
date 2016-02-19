@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  font-family: "Helvetica Neue", arial, sans-serif;
+  background-image: linear-gradient(to top, #7b824f, #c4d8df);
+}
+.wraper {
+  margin: auto;
+  width: 76%;
+  -webkit-box-shadow: 0px 0px 17px 8px rgba(160, 142, 94, 1);
+  -moz-box-shadow: 0px 0px 17px 8px rgba(160, 142, 94, 1);
+  box-shadow: 0px 0px 17px 8px rgba(160, 142, 94, 1);
+}
+.menu {
+  background-image: url("../img/fon.png");
+  color: white;
+  font-size: 0.875vw;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+}
+.last {
+  text-decoration: underline;
+}
+.menu1 {
+  float: left;
+  margin-left: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  }
+  .menu1:first-child {
+    margin-left: 43%;
+  }
+ .menu1:last-child {
+   background-image: linear-gradient(to top, #2e7ac4, #4daada);
+ }
+ .menu1:nth-child(6) {
+   padding-left: 4%;
+  background-image: url("../img/fon.png");
+ }
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.flag {
+  position: absolute;
+  top: 1%;
+  left: 68%;
+}
+.menu1:hover {
+  background-color: #4eabda;
+  color: #ffffff;
+}
+.content {
+  background-image: url("../img/Background.png");
+  width: 100%;
+  height: 1030px;
+  position: relative;
+}
+.form {
+  display: block;
+  position: absolute;
+  top: 55%;
+  left: 52%;
+  width: 46%;
+  height: 58%;
+  margin-top: -29%;
+  margin-left: -23%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/*#FirstName: -moz-placeholder {
+  font-family: "Helvetica Neue";
+}
+#FirstName:: -webkit-input-placeholder {
+  font-family: "Helvetica Neue";
+}
+#FirstName:-ms-input-placeholder {
+  font-family: "Helvetica Neue";
+}
+input[type="text"]::-moz-placeholder {
+  font-family: "Helvetica Neue";
+}*/
+.head {
+  font-size: 1.5vw;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid #b7bfa8;
+  line-height: 2.5;
+}
+[type="button"] {
+ background-color: rgba(0, 0, 0, 0);
+ border: 0;
+ margin: 5% 25%;
+}
+[type="button"] img {
+  width: 100%;
+}
+.head2 {
+  margin-left: 26%;
+}
+.head2 img {
+  width: 65%;
+}
+.ou {
+  position: absolute;
+  top: 27%;
+  left: 48%;
+  color: #999999;
+}
+.field {
+  margin-top: 6%;
+  margin-left: 26%;
+  color: #fffcfc;
+  font-size: 0.875vw;
+}
+.field div {
+  position: relative;
+}
+.field input {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  line-height: 2.5;
+  width: 65%;
+  font-size: 0.875vw;
+  color: #fffcfc;
+  background-color: #0f0e0e;
+  border-style: none;
+  border-bottom: 2px solid #484948;
+  font-family: "Helvetica Neue", arial, sans-serif;
+  padding-left: 5%;
+}
+.field div [type="checkbox"] {
+  width: 4%;
+  }
+  .opacity {
+    opacity: 0.7;
+  }
+  label {
+    position: absolute;
+    top: 36%;
+    left: 5%;
+  }
+  [type="text"]:hover {
+  background-color: #1b5288;
+  border-bottom: 1px solid #689bcd;
+  -webkit-box-shadow: 0px 0px 52px 10px rgba(27,79,130,1);
+  -moz-box-shadow: 0px 0px 52px 10px rgba(27,79,130,1);
+  box-shadow: 0px 0px 52px 10px rgba(27,79,130,1);
+}
+[type="email"]:hover {
+background-color: #1b5288;
+border-bottom: 1px solid #689bcd;
+-webkit-box-shadow: 0px 0px 52px 10px rgba(27,79,130,1);
+-moz-box-shadow: 0px 0px 52px 10px rgba(27,79,130,1);
+box-shadow: 0px 0px 52px 10px rgba(27,79,130,1);
+}
+[type="password"]:hover {
+background-color: #1b5288;
+border-bottom: 1px solid #689bcd;
+-webkit-box-shadow: 0px 0px 52px 10px rgba(27,79,130,1);
+-moz-box-shadow: 0px 0px 52px 10px rgba(27,79,130,1);
+box-shadow: 0px 0px 52px 10px rgba(27,79,130,1);
+}
+.field div [type="button"] {
+  width: 40%;
+  margin-left: 13%;
+  margin-top: 4%;
+  background-image: linear-gradient(to top, #3686ca, #50aedb);
+  border-radius: 8px;
+}
+.text {
+  margin-top: 3%;
+  margin-left: -4%;
+  width: 70%;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 0.6875vw;
+  color: white;
+  opacity: 0.7;
+}
