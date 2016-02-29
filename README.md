@@ -5,3 +5,4 @@ Homework4 - http://GurovaAnna.github.io/HW4/
 Homework5 - http://GurovaAnna.github.io/HW5part1/
 Homework5 - http://GurovaAnna.github.io/HW5part2/
 Homework6 - http://GurovaAnna.github.io/HW6/
+Homework7-8 - http://GurovaAnna.github.io/HW7-8/
