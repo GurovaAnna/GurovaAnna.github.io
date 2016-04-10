@@ -9,3 +9,4 @@ Homework7and8 - http://GurovaAnna.github.io/HW7and8/
 Homework1js - http://GurovaAnna.github.io/HW1js/
 Homework3and4js - http://GurovaAnna.github.io/HW3and4js/
 Homework5and6js - http://GurovaAnna.github.io/HW5and6js/
+Homework7and8js - http://GurovaAnna.github.io/JS7_8/
