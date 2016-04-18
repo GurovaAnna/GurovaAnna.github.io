@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Plugins for JQuery</title>
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="css/jquery.selectbox.css" media="screen" title="no title" charset="utf-8">
+  <link rel="shortcut icon" href="img/abd.gif" media="screen" title="no title" charset="utf-8">
+  <!-- <link rel="stylesheet" href="css/jquery.formstyler.css" media="screen" title="no title" charset="utf-8"> -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel-core.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel-control.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel-pagination.min.js" charset="utf-8"></script>
+  <script src="js/jquery.color-2.1.2.js" charset="utf-8"></script>
+  <!-- <script src="js/jquery.formstyler.min.js" charset="utf-8"></script> -->
+  <script src="js/jquery.selectbox-0.2.js" charset="utf-8"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>
+        Homework JS 9_10
+    </h1>
+    <div class="tabs">
+      <span class="tabs__item">Carousel</span>
+      <span class="tabs__item">Custom Select</span>
+      <span class="tabs__item">Checkbox</span>
+      <span class="tabs__item">Menu</span>
+    </div>
+    <div class="content">
+      <div class="content__item">
+        <div class="carousel__wrap">
+          <div class="carousel">
+            <ul class="carousel__list">
+              <li class="carousel__item"><img src="img/photo1.jpg" alt="This is a picture of the sea"></li>
+              <li class="carousel__item"><img src="img/photo2.jpg" alt="This is a picture of the sea"></li>
+              <li class="carousel__item"><img src="img/photo3.jpg" alt="This is a picture of the sea"></li>
+              <li class="carousel__item"><img src="img/photo4.jpg" alt="This is a picture of the sea"></li>
+              <li class="carousel__item"><img src="img/photo5.jpg" alt="This is a picture of the sea"></li>
+            </ul>
+          </div>
+          <a href="#" class="jcarousel-control-prev inactive" data-jcarouselcontrol="true">‹</a>
+          <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+          <p class="jcarousel-pagination" data-jcarouselpagination="true"></p>
+        </div>
+
+      </div>
+      <div class="content__item">
+        <select class="content__select" name="">
+          <option value="option">option1</option>
+          <option value="option">option2</option>
+          <option value="option">option3</option>
+          <option value="option">option4</option>
+        </select>
+      </div>
+      <div class="content__item">
+        <form class="content__form" action="index.html" method="post">
+          <div class="content__check">
+            <p>
+              Checkboxs with CSS
+            </p>
+            <div class="wrap_check">
+              <input type="checkbox" id="check1" name="name" value="">
+              <label class="check_label" for="check1">Label 1</label>
+            </div>
+            <div class="wrap_check">
+              <input type="checkbox" id="check2" name="name" value="">
+              <label class="check_label" for="check2">Label 2</label>
+            </div>
+            <div class="wrap_check">
+              <input type="checkbox" id="check3" name="name" value="">
+              <label class="check_label" for="check3">Label 3</label>
+            </div>
+            <div class="wrap_check">
+              <input type="checkbox" id="check4" name="name" value="">
+              <label class="check_label" for="check4">Label 4</label>
+            </div>
+          </div>
+          <div class="content__check">
+            <p>
+              Checkboxs Jquery
+            </p>
+            <div class="wrap_check">
+              <label for="check5">Label 5</label>
+              <i>
+                <input type="checkbox" id="check5" name="name" value="">
+              </i>
+            </div>
+            <div class="wrap_check">
+              <label for="check6">Label 6</label>
+              <i>
+                <input type="checkbox" id="check6" name="name" value="">
+            </i>
+            </div>
+            <div class="wrap_check">
+              <label for="check7">Label 7</label>
+              <i>
+                <input type="checkbox" id="check7" name="name" value="">
+              </i>
+            </div>
+            <div class="wrap_check">
+              <label for="check8">Label 8</label>
+              <i>
+                <input type="checkbox" id="check8" name="name" value="">
+              </i>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="content__item">
+        <nav>
+          <ul class="menu">
+            <li class="menu__item"><a href="#">Пункт 1</a></li>
+            <li class="menu__item"><a href="#">Пункт 2</a></li>
+            <li class="menu__item"><a href="#">Пункт 3</a></li>
+            <li class="menu__item dropdown"><a href="#">Пункт 4</a>
+              <ul class="submenu one">
+                <li class="submenu__item dropdown"><a href="#">Подпункт 4.1</a>
+                  <ul class="submenu two">
+                    <li class="submenu__item"><a href="#">Подпункт 4.1.1</a></li>
+                    <li class="submenu__item"><a href="#">Подпункт 4.1.2</a></li>
+                    <li class="submenu__item"><a href="#">Подпункт 4.1.3</a></li>
+                    <li class="submenu__item"><a href="#">Подпункт 4.1.4</a></li>
+                    <li class="submenu__item"><a href="#">Подпункт 4.1.5</a></li>
+                    <li class="submenu__item"><a href="#">Подпункт 4.1.6</a></li>
+                  </ul>
+                </li>
+                <li class="submenu__item"><a href="#">Подпункт 4.2</a></li>
+                <li class="submenu__item"><a href="#">Подпункт 4.3</a></li>
+                <li class="submenu__item"><a href="#">Подпункт 4.4</a></li>
+              </ul>
+            </li>
+            <li class="menu__item"><a href="#">Пункт 5</a></li>
+          </ul>
+        </nav>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
