@@ -1,0 +1,42 @@
+/*стилт для карусели*/
+.carousel-outer {
+  position: relative;
+  overflow: hidden;
+  width: 515px;
+  height: 515px;
+  z-index: 1;
+}
+.carousel-inner {
+  list-style: none;
+  padding: 0;
+  width: 20000px;
+}
+.carousel-elem {
+  padding-bottom: 5px;
+  float: left;
+}
+.arrow {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: #344430;
+  top: 257px;
+  text-align: center;
+  font: 26px/26px Arial, sans-serif;
+  color: white;
+  z-index: 9999;
+}
+.arrow:hover,
+.arrow:focus {
+  text-decoration: none;
+  color: #68F2CD;
+  background:#48918B;
+}
+.left {
+  left: 0px;
+}
+.right{
+  right:0px;
+}
