@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>google search</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.11.2/lodash.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <span class="letter first">П</span><span class="letter second">О</span><span class="letter third">И</span><span class="letter fourth">С</span><span class="letter">К</span>
+        </div>
+        <form class="search" action="index.html" method="get">
+            <input class="user_request" type="text" name="name" value="" placeholder="Search">
+            <button class="btn_search" type="button" name="button">GO</button>
+        </form>
+        <div class="result">
+
+        </div>
+    </div>
+    <script id="render" type="text/template">
+        <ul class="result_list">
+            <% for (var i=0; i<list.length; i++) { %>
+                <li>
+                    <a href="<%= list[i].link %>" target="_blank">
+                        <%= list[i].htmlTitle%>
+                    </a>
+                    <p>
+                        <%= list[i].displayLink%>
+                    </p>
+                    <div>
+                        <%= list[i].htmlSnippet%>
+
+                    </div>
+
+
+                </li>
+                <% }; %>
+        </ul>
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
