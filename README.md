@@ -14,3 +14,5 @@ Homework9and10js - http://GurovaAnna.github.io/JS9_10/
 Homework11and12js - http://GurovaAnna.github.io/JS11_12/
 Homework13and14js - http://GurovaAnna.github.io/JS13_14/
 Homework15and16js - http://GurovaAnna.github.io/JS15_16/
+Homework17and18js - http://GurovaAnna.github.io/JS17_18/
+Homework19and20js - http://GurovaAnna.github.io/JS19_20/
