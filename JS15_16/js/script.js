@@ -12,17 +12,10 @@ function Callback(obj) {
 }
 $(function() {
     $('button').on('click', search);
-
-    if ($("input").is(':focus')) {
-      $('body').one('keydown', search);
-    }
-
-
+    $('input').on('keydown', search);
     function search(e) {
-        if (e.which == 13) {
-            e.preventDefault();
-        }else{
-          return false;
+        if (e.keyCode == 13) {
+          e.preventDefault();
         }
         ques = $('input').val();
         $.ajax({

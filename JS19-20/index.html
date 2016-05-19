@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Build Home</title>
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/flexslider.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,500" media="screen" title="no title" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/lib/jquery.flexslider-min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.11.2/lodash.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/second.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <header class="head">
+        <div class="head__logo">
+            <img src="img/logo.png" alt="logo" />
+            <div class="head__text">
+                <p class="head__bigtext">
+                    Build Home
+                </p>
+                <p class="head__smalltext">
+                    industrial theme
+                </p>
+            </div>
+        </div>
+        <div class="head__social ">
+            <i class="head__icon head__icon-f"></i>
+            <i class="head__icon head__icon-t"></i>
+            <i class="head__icon head__icon-r"></i>
+            <i class="head__icon head__icon-in"></i>
+            <i class="head__icon head__icon-s"></i>
+        </div>
+    </header>
+    <nav class="navigation">
+        <ul class="headmenu">
+            <li class="headmenu__item"><a href="#" class="headmenu__link">home</a></li>
+            <li class="headmenu__item"><a href="#" class="headmenu__link">features</a></li>
+            <li class="headmenu__item"><a href="#" class="headmenu__link">services</a></li>
+            <li class="headmenu__item"><a href="#" class="headmenu__link">news</a></li>
+            <li class="headmenu__item"><a href="#" class="headmenu__link">shop</a></li>
+        </ul>
+        <form class="search" action="index.html" method="post">
+            <input type="text" name="name" value="" placeholder="Search..." />
+            <i class="search__icon"></i>
+        </form>
+    </nav>
+    <section class="about">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="img/carousel.jpg" alt="image of plunt"/>
+                </li>
+                <li>
+                    <img src="img/carousel2.jpg" alt="image of plunt" />
+                </li>
+                <li>
+                    <img src="img/carousel3.jpg" alt="image of plunt" />
+                </li>
+            </ul>
+        </div>
+        <div class="caption">
+          <p class="caption__yellow">
+            <span>build</span>
+          </p>
+          <p class="caption__white">
+            <span class="caption__white-right">Your </span>
+          </p>
+          <p class="caption__white">
+            <span class="caption__white-bot">business </span>
+          </p>
+        </div>
+        <div class="about_articles">
+          <article class="about__item">
+            <h1>01</h1>
+            <i class="about__icon about__icon-settings"></i>
+            <h3>Power Inside</h3>
+            <p>
+              Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique
+            </p>
+            <a href="#">Read more <i class="about__icon about__icon-arrow"></i></a>
+          </article>
+          <article class="about__item">
+            <h1>02</h1>
+            <i class="about__icon about__icon-tech"></i>
+            <h3>New Technologies</h3>
+            <p>
+              Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique
+            </p>
+            <a href="#">Read more <i class="about__icon about__icon-arrow"></i></a>
+          </article>
+          <article class="about__item">
+            <h1>03</h1>
+            <i class="about__icon about__icon-support"></i>
+            <h3>Fast Support</h3>
+            <p>
+              Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique
+            </p>
+            <a href="#">Read more <i class="about__icon about__icon-arrow"></i></a>
+          </article>
+        </div>
+
+
+
+    </section>
+    <section class="service">
+      <div class="container">
+        <h2>
+          Our Services
+        </h2>
+        <figure class="service__item">
+          <div class="service__container service__container-fist">
+            <div class="hover">
+            <p> + </p>
+            </div>
+          </div>
+
+          <figcaption>
+            Schedule Services
+          </figcaption>
+          </figure>
+        <figure class="service__item">
+
+          <div class="service__container service__container-second">
+            <div class="hover">
+            <p> + </p>
+            </div>
+          </div>
+            <figcaption>
+              Preventive Maintence
+            </figcaption>
+        </figure>
+        <figure class="service__item">
+          <div class="service__container service__container-third">
+            <div class="hover">
+            <p> + </p>
+            </div>
+          </div>
+          <figcaption>
+            Tire &amp; Wheel Services
+          </figcaption>
+        </figure>
+        <figure class="service__item">
+
+          <div class="service__container service__container-forth">
+            <div class="hover">
+            <p> + </p>
+            </div>
+          </div>
+          <figcaption>
+            Repair Services
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container">
+        <div class="news__item news__item-first">
+          <h3>Latest News</h3>
+          <article class="news__article">
+            <i class="news__date">Jan</i>
+            <i class="news__date news__date-mod">23</i>
+            <img src="img/Mechanical-Engineer-Design-Engineer.jpg" alt="image for news" />
+              <h4>Advanced Machinery Helps Improve Quality</h4>
+              <span>by&nbsp;<a href="#">cmsmasters</a> Comments&nbsp;(<a href="#">6</a>)</span>
+              <p>
+                Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+              </p>
+            </article>
+
+
+            <article class="news__article">
+            <i class="news__date">Jan</i>
+            <i class="news__date news__date-mod">21</i>
+            <img src="img/electrical-engineer-720.jpg" alt="image for news" />
+              <h4>Powerful Techniques for Advanced Service</h4>
+              <span>by&nbsp;<a href="#">cmsmasters</a> Comments&nbsp;(<a href="#">3</a>)</span>
+              <p>
+                Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+              </p>
+            </article>
+
+        </div>
+        <div class="news__item news__item-second">
+          <h3>Banner Place</h3>
+          <dl class="news__accordion">
+            <dt>&nbsp;&nbsp;&nbsp;&nbsp;accordion panel 1</dt>
+            <dd>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </dd>
+            <dt>&nbsp;&nbsp;&nbsp;&nbsp;accordion panel 2</dt>
+            <dd>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </dd>
+            <dt>&nbsp;&nbsp;&nbsp;&nbsp;accordion panel 3</dt>
+            <dd>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </dd>
+            <dt>&nbsp;&nbsp;&nbsp;&nbsp;accordion panel 4</dt>
+            <dd>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="container">
+
+        <ul>
+          <li><a href=""><i class="partners__icon partners__icon-first"></i></a></li>
+          <li><a href=""><i class="partners__icon partners__icon-second"></i></a></li>
+          <li><a href=""><i class="partners__icon partners__icon-third"></i></a></li>
+          <li><a href=""><i class="partners__icon partners__icon-forth"></i></a></li>
+          <li><a href=""><i class="partners__icon partners__icon-fifth"></i></a></li>
+          <li><a href=""><i class="partners__icon partners__icon-sixth"></i></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="nav">
+      <div class="container">
+
+        <div class="nav__item">
+          <h3>socials</h3>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="">Facebook</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Flickr</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Twitter</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Vimeo</a></li>
+          </ul>
+        </div>
+        <div class="nav__item">
+          <h3>links</h3>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="">How to write a blog</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Create a Blog in 4 Steps</a></li>
+            <li class="menu__item"><a class="menu__link" href="">15 Tips to Increase Traffic</a></li>
+            <li class="menu__item"><a class="menu__link" href="">20 Blogs Post Ideas</a></li>
+          </ul>
+        </div>
+        <div class="nav__item">
+          <h3>blogroll</h3>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="">Blogs Blog</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Roll Up Roll Up</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Blog Free</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Wordpress Blog</a></li>
+          </ul>
+        </div>
+        <div class="nav__item">
+          <h3>about us</h3>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="">Agriculture</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Harvest</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Company news</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Investor relations</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__item">
+          <span>BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
+        </div>
+        <div class="footer__item">
+          <span>+123 900 123 456</span>
+        </div>
+        <div class="footer__item">
+          <span>info@buildhome.web</span>
+        </div>
+        <div class="footer__item footer__item-copy">
+            &copy;&nbsp;2014 Build Home
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>

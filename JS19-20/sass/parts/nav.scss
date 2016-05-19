@@ -1,0 +1,54 @@
+.navigation {
+  width: $pr-width;
+  margin: 0 auto;
+  background: $section-background;
+  position: relative;
+}
+
+.headmenu__item {
+  display: inline-block;
+}
+.headmenu__link {
+  text-decoration: none;
+  font-size: 14px;
+  color: $font-white;
+  text-transform: uppercase;
+  padding: 22px 30px;
+  display: inline-block;
+  border-right: 1px solid $border-color-nav;
+  &:hover {
+    color:#f4b60d;
+  }
+  &:focus {
+    background-color: #248cec;
+  }
+}
+
+.search{
+  position: absolute;
+  top:10px;
+  left:886px;
+  input {
+    padding: 10px;
+    width: 240px;
+    font-family: $arial-font;
+    background-color: #35383c;
+    color: #626466;
+    border: 1px solid $border-color-nav;
+  }
+  .search__icon {
+    height: 15px;
+    width: 15px;
+    background-image: url('../img/sprite.png');
+    display: block;
+    position: absolute;
+    top:10px;
+    left:230px;
+    background-position: -180px -10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+
+}

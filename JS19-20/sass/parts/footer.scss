@@ -1,0 +1,36 @@
+.footer {
+  background: $footer-back;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $footer-font-color;
+}
+.footer__item {
+  display: inline-block;
+ margin: 20px 20px 20px 0;
+   span:before {
+     display: inline-block;
+     margin-right: 10px;
+     content: '';
+     width: 17px;
+     height: 17px;
+     background-image: url('../img/sprite.png');
+     background-position: -131px -7px;
+   }
+   &:nth-child(2) {
+     span:before{
+       width: 16px;
+       background-position: -145px -7px;
+     }
+   }
+   &:nth-child(3) {
+     span:before{
+       width: 17px;
+       height: 14px;
+       background-position: -160px -7px;
+     }
+   }
+}
+.footer__item-copy {
+  float: right;
+}

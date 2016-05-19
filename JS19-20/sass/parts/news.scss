@@ -1,0 +1,107 @@
+.news {
+  background: $section-news-back;
+  h3 {
+    font-size: 24px;
+    color: $section-background;
+    margin: 45px 0 35px;
+  }
+}
+.news__item {
+    @include clearfix;
+  width: 48%;
+  display: inline-block;
+}
+.news__item-first {
+  margin-right: 30px;
+  img {
+    display: block;
+    float: left;
+    margin-right: 30px;
+  }
+  .news__article {
+    position: relative;
+    float: left;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    h4{
+      color: $section-background;
+      font-weight: 500;
+    }
+    span {
+      color: $font-color-news-main;
+      font-size: 13px;
+    }
+    p {
+      font-family: $arial-font;
+      font-size: 13px;
+      color: $font-color-news-main;
+      margin-top: 20px;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+}
+.news__date {
+  text-align: center;
+  color: $font-white;
+  line-height: 2.2;
+  font-weight: 500;
+  font-size: 15px;
+  display: block;
+  position: absolute;
+  top:15px;
+  left:-15px;
+  width: 40px;
+  height: 40px;
+  background-color: #248cec;
+
+}
+.news__date-mod {
+  color: $section-background;
+  font-size: 18px;
+  top: 55px;
+  background-color: #f4b60d;
+}
+.news__accordion {
+  float: left;
+  width: 100%;
+  .clickedAccord {
+    background: #f4b60d;
+    color: white;
+    border-right: 1px solid $accord-bord-color;
+    &:before {
+        content: '-';
+    }
+  }
+  dt {
+    cursor: pointer;
+    text-transform: uppercase;
+    background: white;
+    font-size: 13px;
+    line-height: 3;
+    border: 1px solid $accord-bord-color;
+    margin-bottom: 7px;
+    &:before {
+      display: inline-block;
+      line-height: 3;
+      border-right: 2px solid $accord-bord-color;
+      width: 39px;
+      text-align: center;
+      content: '+';
+    }
+    &:hover {
+      color: white;
+      background: #f4b60d;
+    }
+  }
+  dd {
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    padding-left: 42px;
+    color: $font-color-news-main;
+    line-height: 1.5;
+    margin: 30px 0 45px;
+
+  }
+}

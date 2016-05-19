@@ -1,0 +1,25 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "del": "^2.2.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

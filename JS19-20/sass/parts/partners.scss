@@ -1,0 +1,33 @@
+.partners {
+  ul {
+    list-style: none;
+    text-align: center;
+    margin: 100px 0;
+  }
+  li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+}
+.partners__icon {
+  display: block;
+  width:152px;
+  height: 62px;
+  background-image: url('../img/sprite.png');
+  background-position: 0 -36px;
+}
+.partners__icon-second {
+  background-position: -154px -36px;
+}
+.partners__icon-third {
+  background-position: -306px -36px;
+}
+.partners__icon-forth {
+  background-position: -470px -36px;
+}
+.partners__icon-fifth {
+  background-position: -615px -36px;
+}
+.partners__icon-sixth {
+  background-position: -761px -36px;
+}

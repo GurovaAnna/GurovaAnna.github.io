@@ -1,0 +1,37 @@
+.nav {
+  background: $section-background;
+ h3 {
+   margin: 60px 0 28px;
+   text-transform: uppercase;
+   color:white;
+ }
+}
+.nav__item {
+  display: inline-block;
+  width:22%;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.menu {
+  margin-bottom: 70px;
+}
+.menu__item {
+border-bottom: 1px solid #393c40;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.menu__link {
+  display: block;
+  text-decoration: none;
+  color: $foot-nav-font;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  padding: 12px 0;
+  &:hover {
+    color:$font-about-hover;
+  }
+
+}

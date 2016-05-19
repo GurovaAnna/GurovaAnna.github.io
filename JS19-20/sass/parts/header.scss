@@ -1,0 +1,67 @@
+.head {
+  width: $pr-width;
+  margin: $head-margin auto;
+  @include clearfix ;
+}
+.head__logo{
+    float: left;
+}
+.head__text {
+  display: inline-block;
+  padding-left: 2px;
+}
+.head__bigtext{
+  font-size: 30px;
+  font-weight: 500;
+}
+.head__smalltext{
+  font-size: 12px;
+  text-transform: uppercase;
+  color:#c1c1c1;
+  letter-spacing: 3.5px;
+}
+.head__social {
+  float:right;
+}
+.head__icon {
+  cursor: pointer;
+  height: $social-height;
+  background-image: url('../img/social.png');
+  display: inline-block;
+  margin-left: 15px;
+}
+  .head__icon-f {
+    width: 12px;
+    &:hover {
+      background-position: 0 $social-height+2;
+    }
+  }
+  .head__icon-t {
+    width:15px;
+    background-position: -12px 0;
+    &:hover {
+      background-position: -12px $social-height+2;
+    }
+  }
+  .head__icon-r {
+    width:17px;
+    background-position: -27px 0;
+    &:hover {
+      background-position: -27px $social-height+2;
+    }
+  }
+  .head__icon-in {
+    width:17px;
+    background-position: -44px 0;
+    &:hover {
+      background-position: -44px $social-height+2;
+    }
+  }
+  .head__icon-s {
+    width:17px;
+    height: 18px;
+    background-position: -61px 0;
+    &:hover {
+      background-position: -61px $social-height+2;
+    }
+  }
