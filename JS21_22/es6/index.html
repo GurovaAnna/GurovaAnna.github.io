@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/lodash/4.11.2/lodash.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  
+
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <title>localStorage and JSON</title>
+  </head>
+  <body>
+    <script id="questions" type="text/template">
+      <ol>
+        <% for (var i=0; i<list.length; i++) { %>
+        <li>
+          <span>
+            <%- list[i].name %>
+          </span>
+          <% list[i].answers.sort(compareRandom); %>
+          <% for (j=0; j<list[i].answers.length; j++) { %>
+
+
+              <label for='<%- i+1 %>ans<%- j+1 %>'>
+              <input type="checkbox" id='<%- i+1 %>ans<%- j+1 %>' value="<%- list[i].answers[j] %>">
+                <%- list[i].answers[j] %> </label>
+
+            <% }; %>
+        </li>
+        <% }; %>
+      </ol>
+    </script>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

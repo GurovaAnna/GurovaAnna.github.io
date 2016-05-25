@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/lodash/4.11.2/lodash.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script data-main="js/main" src="js/lib/require.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+
+    <title>MVC pattern ToDo-list</title>
+  </head>
+  <body>
+    <script type="text/template" id="const-wrapper">
+      <div class="wrapper">
+        <h1>ToDo List</h1>
+        <div class="operation">
+          <input type="text" class="operation__value">
+          <button type="button" name="button" class="operation__btn operation__btn-add">Add item</button>
+          <button type="button" name="button" class="operation__btn operation__btn-save">Edit</button>
+          <button type="button" name="button" class="operation__btn operation__btn-del">Del</button>
+        </div>
+        <ul class="list"></ul>
+      </div>
+    </script>
+  <script type="text/template" id="item-compile">
+      <% for (var i = 0; i < list.length; i++) { %>
+        <li class="list__item"  data-value="<%= list[i] %>"><span class="list__number"><%= i+1 %></span> <%= list[i] %> <i class="icon"></i></li>
+      <% }; %>
+  </script>
+  <!-- <script src="js/withoutRequire.js" charset="utf-8"></script> -->
+
+  </body>
+</html>
