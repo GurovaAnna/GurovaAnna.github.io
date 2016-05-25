@@ -16,5 +16,6 @@ Homework13and14js - http://GurovaAnna.github.io/JS13_14/
 Homework15and16js - http://GurovaAnna.github.io/JS15_16/
 Homework17and18js - http://GurovaAnna.github.io/JS17_18/
 Homework19and20js - http://GurovaAnna.github.io/JS19-20/
-Homework21and22js - http://GurovaAnna.github.io/JS21_22/
+Homework21and22js - http://GurovaAnna.github.io/JS21_22/es6/
+Homework21and22js - http://GurovaAnna.github.io/JS21_22/unit_test/
 Homework23and24js - http://GurovaAnna.github.io/JS23_24/
