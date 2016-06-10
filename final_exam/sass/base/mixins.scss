@@ -1,34 +1,32 @@
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 960px;
-
-
 @mixin tablet {
-  @media (min-width: #{$tablet-width}) {
-    @content;
-  }
+     @media (min-width: #{$tablet-width}){
+        @content;
+    }
 }
 @mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
+     @media (min-width: #{$desktop-width}){
+        @content;
+    }
 }
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-           behavior: url(PIE.htc);
-           
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
 }
 @mixin clearfix() {
-    &:before,
-    &:after {
+    &:after,
+    &:before {
         content: "";
         display: table;
     }
     &:after {
         clear: both;
+        height: 0;
+        overflow: hidden;
     }
 }
 @mixin vertical-align {
