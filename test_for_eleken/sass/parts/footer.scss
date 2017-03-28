@@ -1,0 +1,39 @@
+.footer {
+  @extend .container;
+  @include clearfix;
+  .footer_logo + span {
+    float: right;
+    font-family: $font-lato;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: $color-light-grey;
+    margin-right: 153px;
+    margin-top: 47px;
+  }
+}
+
+.footer_logo {
+@extend .logo;
+}
+
+.footer_navigation {
+  margin-left: 445px;
+  margin-top: 13px;
+  .footer_item {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 50px;
+  .footer_link {
+    @extend .link;
+    line-height: 2;
+    color: $color-dark-grey;
+    
+
+  }
+
+  &:nth-child(4)  {
+    margin-right: 54px;
+}
+  }
+}

@@ -1,0 +1,43 @@
+.wrapper {
+  background-color: #000;
+}
+
+//for extend
+.container {
+  width: $main-width;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: $font-lato;
+  font-weight: bold;
+  font-size: 12px;
+  color: $color-grey;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-left: 0px;
+  line-height: 3.5;
+}
+.sprites {
+position: absolute;
+display: inline-block;
+background-image: url('../img/sprites.png');
+background-repeat: no-repeat;
+}
+
+.logo {
+  float: left;
+  margin-left: $main-margin-left;
+  font-family: $font-didot;
+  color: $color-dark-grey;
+ font-size: 53px;
+ padding-top: 26px;
+ padding-bottom: 23px;
+ letter-spacing: -2.9px;
+ span {
+   font-size: 32px;
+ }
+}

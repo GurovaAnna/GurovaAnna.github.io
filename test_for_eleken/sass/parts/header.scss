@@ -1,0 +1,133 @@
+.header {
+@extend .container;
+}
+
+.header_menu, .header_nav {
+  border-bottom: 1px solid $color-grey;
+  @include clearfix;
+}
+
+.header_list {
+  float:left;
+  list-style-type: none;
+  margin-left: $main-margin-left;
+  .header_item {
+    display: inline-block;
+    margin-left: 0px;
+    .header_link {
+     @extend .link;
+     width: 62px;
+     }
+    }
+  .header_item:nth-child(1) {
+    margin-right:15px;
+  }
+  .header_item:nth-child(2) {
+    margin-right:-5px;
+  }
+}
+
+.header_lang {
+  float: right;
+  margin-right: 163px;
+  position: relative;
+  .header_item {
+    display: inline-block;
+    margin-right: 0px;
+     .header_link {
+       @extend .link;
+       width: 20px;
+       margin-right: 0px;
+    }
+    span {
+      @extend .sprites;
+      width: 10px;
+      height: 10px;
+      top:16px;
+      left:24px;
+      background-position: 0px 0px;
+
+    }
+  }
+}
+
+.header_currency {
+  margin-left: 1142px;
+  position: relative;
+  .header_item {
+    display: inline-block;
+    margin-left: 0px;
+    .header_link {
+      @extend .link;
+      width: 58px;
+      }
+    span {
+      @extend .sprites;
+      width: 10px;
+      height: 10px;
+      top:16px;
+      left:67px;
+      background-position: 0px 0px;
+      }
+    }
+}
+
+.header_logo {
+@extend .logo;
+}
+
+.header_bag {
+  float: right;
+  margin-top: 27px;
+  margin-right: 171px;
+  span {
+    font-family: $font-lato;
+    font-weight: bold;
+    font-size: 12.5px;
+    color: $color-grey;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-right: 12px;
+     & + span {
+       display: inline-block;
+       padding: 16px 19px;
+       border: 2px solid $color-blue;
+       color: $color-dark-grey;
+       text-align: center;
+       @include border-radius(30px);
+     }
+  }
+}
+
+.header_navigation {
+  margin-left: 434px;
+  margin-top: 13px;
+  .header_item {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 50px;
+  .header_link {
+    @extend .link;
+    font-size: 12.5px;
+    line-height: 2;
+    }
+    &:nth-child(4)  {
+    margin-right: 70px;
+    .header_link {
+    color: #fc411d;
+    }
+}
+&:hover .header_link {
+  color: #696969;
+  border-bottom: 2px solid $color-blue;
+  }
+  }
+}
+.header_search {
+  @extend .sprites;
+  width: 20px;
+  height: 20px;
+  top:87px;
+  left: 1347px;
+  background-position: -34px 0px;
+}

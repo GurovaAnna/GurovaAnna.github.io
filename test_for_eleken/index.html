@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script  src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <title> test</title>
+  </head>
+  <body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header_menu">
+        <ul class="header_list">
+          <li class="header_list header_item"><a href="#" class="header_list header_link">delivery</a></li>
+          <li class="header_list header_item"><a href="#" class="header_list header_link">faq</a></li>
+          <li class="header_list header_item"><a href="#" class="header_list header_link">help</a></li>
+        </ul>
+        <ul class="header_lang">
+          <li class="header_lang header_item"><a href="#" class="header_lang header_link"> en </a><span></span></li>
+        </ul>
+
+        <ul class="header_currency">
+          <li class="header_currency header_item"><a href="#" class="header_currency header_link"> dollars </a><span></span></li>
+        </ul>
+
+      </div>
+      <div class="header_nav">
+      <div class="header_logo">
+        C <span> &#38;</span>B
+      </div>
+      <div class="header_bag">
+        <span>your bag</span>
+        <span>2</span>
+      </div>
+      <ul class="header_navigation">
+        <li class="header_navigation header_item"><a href="#" class="header_navigation header_link">home</a></li>
+        <li class="header_navigation header_item"><a href="#" class="header_navigation header_link">catalog</a></li>
+        <li class="header_navigation header_item"><a href="#" class="header_navigation header_link">news</a></li>
+        <li class="header_navigation header_item"><a href="#" class="header_navigation header_link">sale</a></li>
+        <li class="header_navigation header_item"><a href="#" class="header_navigation header_link">about</a></li>
+        <li class="header_navigation header_item"><a href="#" class="header_navigation header_link">contact</a></li>
+      </ul>
+       <div class="header_search">
+
+       </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main_catalog">
+        <h1>Catalog</h1>
+        <nav>
+            <ul class="main_navigation">
+            <li class="main_navigation main_item"><a href="#" class="main_navigation main_link">all</a></li>
+            <li class="main_navigation main_item"><a href="#" class="main_navigation main_link">t-shirts</a></li>
+            <li class="main_navigation main_item"><a href="#" class="main_navigation main_link">sweaters</a></li>
+            <li class="main_navigation main_item"><a href="#" class="main_navigation main_link">shorts</a></li>
+            <li class="main_navigation main_item"><a href="#" class="main_navigation main_link">jackets</a></li>
+            <li class="main_navigation main_item"><a href="#" class="main_navigation main_link">accessoires</a></li>
+          </ul>
+        </nav>
+        <div class="main_container">
+            <div class="grid">
+              <script type="text/template" id="catalog">
+                <%for (var i = 0; i < data.clothes.length; i++) { %>
+                  <div class="grid-item">
+                  <img src="<%- data.src + (i+1) + '.jpg' %>" alt="clothes">
+                  <div class="main_prices">
+                   <h4><%- data.clothes[i] %></h4>
+                   <p><%- data.prices[i] %></p>
+                  </div>
+                  </div>
+                <% } %>
+              </script>
+            </div>
+            <a href="#">load more...</a>
+          </div>
+        </section>
+        <section class="subscribe">
+            <h5>subscribe</h5>
+            <p>
+              Stay updated on news
+            </p>
+            <div class="subscribe_button">
+              <a href="#">your email address</a>
+              <span></span>
+            </div>
+          </section>
+    </main>
+    <footer class="footer">
+      <div class="footer_logo">
+        C <span> &#38;</span>B
+      </div>
+        <span>&copy;2010 - 2016 All rights reserved</span>
+      <ul class="footer_navigation">
+        <li class="footer_navigation footer_item"><a href="#" class="footer_navigation footer_link">home</a></li>
+        <li class="footer_navigation footer_item"><a href="#" class="footer_navigation footer_link">catalog</a></li>
+        <li class="footer_navigation footer_item"><a href="#" class="footer_navigation footer_link">news</a></li>
+        <li class="footer_navigation footer_item"><a href="#" class="footer_navigation footer_link">sale</a></li>
+        <li class="footer_navigation footer_item"><a href="#" class="footer_navigation footer_link">about</a></li>
+        <li class="footer_navigation footer_item"><a href="#" class="footer_navigation footer_link">contact</a></li>
+      </ul>
+    </footer>
+  </div>
+  </body>
+</html>
