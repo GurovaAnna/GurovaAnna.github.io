@@ -1,0 +1,159 @@
+.access_to_money {
+  position: relative;
+}
+
+.access_to_money_img {
+  width: 100%;
+  height: 1028px;
+  background: url('../img/bg3_1.png') center no-repeat;
+  background-size:contain;
+  position: absolute;
+  top: -30%;
+  right:-54.5%;
+  z-index: -1;
+  @include tablet {
+      width: 90%;
+      top:-54%;
+  };
+  @include mobile {
+      top:-48%;
+  };
+}
+
+.access_to_money_currency {
+  position: absolute;
+  background-color: $color-white;
+  width: 36%;
+  top: 46%;
+  right: 8.6%;
+  @include border-radius(5px);
+  box-shadow: 0 0 25px $color-middle-gray;
+  @include tablet {
+    top:30%;
+    right: 1%;
+  };
+  @include mobile {
+    position: relative;
+    width: 55%;
+    min-width: 290px;
+    margin: 5% auto 1%;
+  };
+
+  .access_to_money_currency_sign {
+    font-size: 20px;
+    color: $color-red;
+    float: right;
+    margin-top: 21px;
+    margin-right: 25px;
+
+  };
+
+  .access_to_money_currency_table {
+    font-family: $font-roboto-regular;
+    font-size: 14px;
+
+    @include mobile {
+      font-size: 12px;
+    };
+    table {
+      width: 84%;
+      text-align: left;
+      margin: 28px 0 20px 37px;
+
+      caption {
+        width: 85%;
+        text-align: left;
+        line-height: 1.4;
+        margin-bottom: 6px;
+        @extend .paragraph;
+
+        @include tablet {
+          font-size: 14px;
+        };
+
+
+      };
+
+    th {
+      color: $color-light-gray;
+      padding: 13px 0;
+      border-bottom: 1px solid $color-light-gray;
+
+      &:not(:first-child) {
+        text-align: right;
+        padding-right: 15px;
+      }
+    };
+
+    td {
+      color: $color-dark-gray;
+      padding: 17px 0;
+
+      &:not(:first-child) {
+        text-align: right;
+        padding-right: 15px;
+      }
+    }
+  }
+ }
+}
+
+.access_to_money_section {
+
+  h1 {
+
+    width: 35%;
+    font-size: 46px;
+    text-align: center;
+    padding-top: 182px;
+    margin-left: 32.5%;
+    @extend .section_header;
+    @include tablet {
+      width: 50%;
+      font-size: 37px;
+      padding-top: 50px;
+      margin-left: 10%;
+    };
+    @include mobile {
+      width: 80%;
+      font-size: 28px;
+    };
+  }
+  div {
+    width: 28%;
+    margin-top: 4%;
+    margin-left: 20.5%;
+    line-height: 1.2;
+    @include tablet {
+      width: 50%;
+      margin-left: 5%;
+     };
+    @include mobile {
+      width: 80%;
+      margin-left: 10%;
+    };
+     p {
+       margin-bottom: 5%;
+       @extend .paragraph;
+       @include mobile {
+           font-size: 16px;
+       };
+     }
+  }
+}
+
+.access_to_money_button {
+  margin-top: 3%;
+  margin-bottom: 6.5%;
+  margin-left: 20.5%;
+  padding: 10px 63px;
+  @extend .button;
+  @include border-radius(5px);
+  @include tablet {
+    display: block;
+    margin:2% auto 15%;
+   };
+   @include mobile {
+     padding: 10px 50px;
+   };
+}

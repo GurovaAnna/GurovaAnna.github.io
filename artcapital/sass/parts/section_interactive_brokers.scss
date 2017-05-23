@@ -1,0 +1,117 @@
+.interactive_brokers {
+  position: relative;
+}
+
+.interactive_brokers_img {
+  width: 55%;
+  height: 725px;
+  background: url('../img/bg3_1.png') center no-repeat;
+  background-size:contain;
+  position: absolute;
+  top: -18.5%;
+  left:-33%;
+  z-index: -1;
+  @include tablet {
+      width: 48%;
+      top:-54%;
+  };
+  @include mobile {
+      top:-48%;
+  };
+}
+
+.interactive_brokers_barrons {
+  width: 135px;
+  position: absolute;
+  top: 64%;
+  left: 20.5%;
+  @include tablet {
+    left:10%;
+  };
+  @include mobile {
+    position: relative;
+    left:0;
+    margin: 0 auto;
+  };
+  p {
+    font-family: $font-roboto-regular;
+    font-size: 14px;
+    color:$color-light-gray;
+    line-height: 1.2;
+    margin-bottom: 6%;
+  }
+  p+p {
+    font-size: 32px;
+    color: $color-middle-gray;
+  }
+}
+
+.interactive_brokers_barrons_logo {
+  width: 135px;
+  height: 100px;
+  background: url('../img/sprite.png') -148px -50px no-repeat;
+  margin-bottom: 16%;
+}
+
+.interactive_brokers_section {
+
+  h1 {
+
+    width: 54%;
+    font-size: 54px;
+    text-align: center;
+    padding-top: 172px;
+    margin-left: 23%;
+    @extend .section_header;
+    @include tablet {
+      width: 50%;
+      font-size: 37px;
+      text-align: center;
+      padding-top: 50px;
+      margin-left: 30%;
+    };
+    @include mobile {
+      width: 80%;
+      font-size: 28px;
+      margin-left: 15%;
+    };
+  }
+  div {
+    width: 40.7%;
+    margin-top: 4.3%;
+    margin-left: 39.5%;
+    line-height: 1.2;
+    @include tablet {
+      width: 55%;
+      margin-left: 30%;
+     };
+    @include mobile {
+      width: 80%;
+      margin-left: 15%;
+    };
+     p {
+       margin-bottom: 3.5%;
+       @extend .paragraph;
+       @include mobile {
+           font-size: 16px;
+       };
+     }
+  }
+}
+
+.interactive_brokers_button {
+  margin-top: 2.9%;
+  margin-bottom: 6.5%;
+  margin-left: 39.5%;
+  padding: 10px 60px;
+  @extend .button;
+  @include border-radius(5px);
+  @include tablet {
+    display: block;
+    margin:2% auto 15%;
+   };
+   @include mobile {
+     margin-bottom: 1%;
+     padding: 12px 50px;
+   };
+}

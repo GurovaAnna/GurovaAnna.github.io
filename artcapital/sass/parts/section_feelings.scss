@@ -1,0 +1,98 @@
+.feelings {
+  background: url('../img/mood_bg_3.png') -305px -10px no-repeat;
+  @include tablet {
+  padding-bottom: 15px;
+};
+  h1 {
+    width: 60%;
+    font-family: $font-roboto-light;
+    font-size: 46px;
+    color: $color-white;
+    text-align: center;
+    line-height: 1.1;
+    padding-top: 7.2%;
+    margin: 0 auto;
+    @include tablet {
+        width: 70%;
+        font-size: 34px;
+        };
+    @include mobile {
+        font-size: 20px;
+        padding-top: 10px;
+      };
+  }
+
+  .feelings_container {
+    width: 60%;
+    margin: 0 auto;
+    @include mobile {
+      width: 53%;
+    };
+   }
+}
+
+.feelings_box {
+  display: inline-block;
+  min-width: 150px;
+  width: 28%;
+  vertical-align: top;
+  margin: 12% 7.3% 7% 0%;
+  @include tablet {
+      display: block;
+      width: 100%;
+      margin: 2% auto;
+    };
+  p {
+    font-family: $font-roboto-regular;
+    font-size: 16px;
+    color: $color-white;
+    text-align: center;
+    line-height: 1.4;
+    @include mobile {
+        font-size: 14px;
+      };
+  }
+}
+
+.feelings_privilege.feelings_box {
+  margin-right: 0;
+  @include tablet {
+    margin: 2% auto;
+  };
+}
+
+.feelings_sprite {
+  width: 122px;
+  height: 120px;
+  margin-bottom: 16%;
+  margin-left: 22%;
+  background: url('../img/sprite.png') -293px -63px no-repeat;
+  @include tablet {
+    margin: 2% auto;
+  };
+}
+
+.feelings_sprite.communication_sprite {
+  background-position: -418px -62px;
+}
+
+.feelings_sprite.privilege_sprite {
+  background-position: -544px -63px;
+}
+
+.open_account_button {
+  border: 1px solid $color-white;
+  @include border-radius(5px);
+  background-color: transparent;
+  font-family: $font-roboto-regular;
+  font-size: 18px;
+  color: $color-white;
+  padding: 8px 80px;
+  margin-bottom: 59px;
+  margin-left: 39%;
+  @include tablet {
+    display: block;
+    margin: 1% auto;
+  };
+
+}

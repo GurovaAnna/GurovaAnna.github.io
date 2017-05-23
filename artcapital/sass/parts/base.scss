@@ -1,0 +1,28 @@
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+//for extend
+
+.section_header {
+  display: block;
+  font-family: $font-roboto-light;
+  color: $color-dark-gray;
+  line-height: 1.1;
+}
+
+.paragraph {
+  font-family: $font-roboto-light;
+  font-size: 18px;
+  color: $color-dark-gray;
+}
+
+.button {
+  background-color: $color-red;
+  border: none;
+  font-family: $font-roboto-regular;
+  font-size: 18px;
+  color: $color-white;
+}

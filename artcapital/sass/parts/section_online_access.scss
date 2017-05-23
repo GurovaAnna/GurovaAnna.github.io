@@ -1,0 +1,109 @@
+.online_access {
+  position: relative;
+}
+
+.online_access_img  {
+  width: 50%;
+  height: 725px;
+  background: url('../img/bg1_1.png') center no-repeat;
+  background-size:contain;
+  position: absolute;
+  top: -47%;
+  left:-20%;
+  z-index: -1;
+  @include mobile {
+    top: -63%;
+  }
+}
+
+.online_access_representative {
+  width: 186px;
+  background-color: $color-black;
+  float: right;
+  margin-right: 3.5%;
+  cursor: pointer;
+  @include mobile {
+    width: 50px;
+    height: 60px;
+    margin-right: 0;
+  };
+}
+
+.online_access_representative_logo {
+  width: 150px;
+  height: 50px;
+  background: url('../img/sprite.png') -187px 0 no-repeat;
+  margin-left: 20px;
+  margin-top: 2px;
+  @include mobile {
+    width: 19px;
+    margin-left: 15px;
+  };
+}
+
+.online_access_representative_link {
+  display: block;
+  text-decoration: none;
+  font-family: $font-roboto-regular;
+  font-size: 15px;
+  color:$color-white;
+  margin: 7px 39px 22px;
+}
+
+.online_access_section {
+
+  h1 {
+    width: 47%;
+    font-size: 54px;
+    text-align: center;
+    padding-top: 139px;
+    margin-left: 26%;
+    @extend .section_header;
+    @include tablet {
+      width: 60%;
+      font-size: 37px;
+      padding-top: 100px;
+    };
+    @include mobile {
+      font-size: 28px;
+    };
+  }
+
+  div {
+    width: 49%;
+    margin-top: 5%;
+    margin-left: 20.5%;
+    line-height: 1.2;
+    @include tablet {
+      width: 55%;
+      margin-left: 28%;
+     };
+    @include mobile {
+        width: 80%;
+        margin-left: 10%;
+    };
+
+    p {
+       margin-bottom: 3%;
+       @extend .paragraph;
+       @include mobile {
+           font-size: 16px;
+       };
+      }
+  }
+}
+
+.online_access_button {
+  padding: 12px 32px;
+  margin-top: 2.6%;
+  margin-left: 37.5%;
+  @extend .button;
+  @include border-radius(5px);
+  @include tablet {
+    display: block;
+    margin:2% auto;
+   };
+  @include mobile {
+    padding: 12px 24px;
+  };
+}
