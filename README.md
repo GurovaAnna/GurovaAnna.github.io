@@ -20,3 +20,4 @@ Homework21and22js - http://GurovaAnna.github.io/JS21_22/es6/
 Homework21and22js - http://GurovaAnna.github.io/JS21_22/unit_test/
 Homework23and24js - http://GurovaAnna.github.io/JS23_24/
 Homeworkfinal_exam - http://GurovaAnna.github.io/final_exam/
+Guardian News - http://gurovaanna.github.io/guardianTest/
