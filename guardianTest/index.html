@@ -1,0 +1,62 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>The Guardian News</h1>
+		<button class="js_refresh_btn"> Refresh</button>
+		<div class="news_result">
+
+		</div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.11.2/lodash.min.js"></script>
+	<script src="src/js/main.js"></script>
+
+	<script type="text/template" id="news_header">
+		<ul class="news_list">
+			<% for(var i = 0; i<10; i++){ %>
+			<li class="news_item clearfix">
+					<h3 class="news_item_header" data-id="<%= data.results[i].id %>">
+         		<%= data.results[i].webTitle %>
+					</h3>
+			<div class="news_item_content">
+			</div>
+			</li>
+			<% }; %>
+		</ul>
+		<div class="news_pagination">
+			<button class="js_prev_btn">< Previous Page</button>
+			<input type="text" class="news_page_number" value="<%= data.currentPage %>">
+			<span class="news_pages">
+				<span> of </span>
+				<span id="page_number"><%= data.pages %></span>
+				<span> pages </span>
+			</span>
+			<button class="js_next_btn">Next Page ></button>
+		</div>
+	</script>
+
+	<script type="text/template" id="news_content">
+	  	<p class="news_item_text"><%= data.blocks.body[0].bodyTextSummary %></p>
+			<a href="<%= data.webUrl %>" class="news_item_link" target="_blank">Read full news</a>
+	</script>
+
+	<script type="text/template" id="error">
+		<p class="news_error">
+			Sorry, we couldn't find news for you. Please try again later.
+		</p>
+	</script>
+	<script type="text/template" id="pages">
+			<span> of </span>
+			<span id="page_number"><%= data.pages %></span>
+			<span> pages </span>
+	</script>
+  </body>
+</html>
